@@ -1,0 +1,5 @@
+{
+  "_about": "This film's pronunciation list: every person, company, product and acronym from the cast and data sheet that the voice could get wrong. 'say' = a respelling ('Coho Winery': 'Ko-ho Winery'), 'ipa' = exact Kokoro phonemes (python speech.py shows how lines will be spoken; voice.py --listen flags words that came out wrong). Names you'll reuse across films go in <home>/lexicon.json.",
+  "say": {},
+  "ipa": {}
+}

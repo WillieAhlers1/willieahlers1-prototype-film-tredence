@@ -1,0 +1,69 @@
+{
+  "license": {
+    "name": "Unsplash License",
+    "url": "https://unsplash.com/license",
+    "accessed": "2026-10-13"
+  },
+  "photos": [
+    {
+      "file": "companionship-forest-hike.jpg",
+      "title": "A diverse group of friends hiking in a forest",
+      "photographer": "Vitaly Gariev",
+      "source": "https://unsplash.com/photos/F10bExv6fgw"
+    },
+    {
+      "file": "community-rooftop-joy.jpg",
+      "title": "A diverse group of friends smiling together outdoors",
+      "photographer": "Vitaly Gariev",
+      "source": "https://unsplash.com/photos/Ib0KLrAfb-E"
+    },
+    {
+      "file": "companionship-kayak-duo.jpg",
+      "title": "Two people kayaking on a calm lake surrounded by trees",
+      "photographer": "Andrea Huls Pareja",
+      "source": "https://unsplash.com/photos/df7cJ9sC56I"
+    },
+    {
+      "file": "exploration-kayak-group.jpg",
+      "title": "People kayaking on a calm lake with forested hills",
+      "photographer": "Mithil Girish",
+      "source": "https://unsplash.com/photos/g8882y5m51w"
+    },
+    {
+      "file": "community-campfire.jpg",
+      "title": "Friends gathered around a campfire in a forest",
+      "photographer": "Vitaly Gariev",
+      "source": "https://unsplash.com/photos/k6NCi8KH-VQ"
+    },
+    {
+      "file": "aspiration-mountain-team.jpg",
+      "title": "Four people silhouetted against a dramatic mountain range",
+      "photographer": "Alin Gavriliuc",
+      "source": "https://unsplash.com/photos/9TqC_eWvm9I"
+    },
+    {
+      "file": "exploration-cliff-silhouette.jpg",
+      "title": "Silhouette of three people on a mountain cliff",
+      "photographer": "Karl Magnuson",
+      "source": "https://unsplash.com/photos/MvxMvPO3S1M"
+    },
+    {
+      "file": "aspiration-sunrise-summit.jpg",
+      "title": "Mountain summit during sunrise",
+      "photographer": "Rayana Gasparotto",
+      "source": "https://unsplash.com/photos/QMo_HB_zPvg"
+    },
+    {
+      "file": "companionship-beach-friends.jpg",
+      "title": "A group of people standing on a beach",
+      "photographer": "Yoav Aziz",
+      "source": "https://unsplash.com/photos/qJzO9DKUMmo"
+    },
+    {
+      "file": "community-park-picnic.jpg",
+      "title": "Friends enjoying a picnic in a sunny park",
+      "photographer": "GTSLWR",
+      "source": "https://unsplash.com/photos/9JPeuyoINMA"
+    }
+  ]
+}

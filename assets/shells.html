@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product parts, as outlines</title>
+<script src="kit/proto-style.js"></script>
+</head>
+<body data-concept="Concept demo · Fictitious data">
+<main class="stage">
+
+<!-- PRODUCT PARTS, AS OUTLINES.  The chrome of each product is real and tuned; every word, name and number is a
+     double-bracket placeholder.  This is a parts bin, not a storyline: the order here means nothing.  Copy only the
+     part a beat needs, cut what it doesn't, combine parts, and change the layout freely.  Fill them from brief.md's
+     data sheet.  What each screen tells the room: references/look-and-feel.md "What screens mean".
+     Chart numbers (1, 2, 3 ...) are only there so the visual draws: replace them with the data sheet's.
+     The agent app (.cpa) is the customer's own custom-built app, not Microsoft Copilot: its name, its sparkle mark
+     and its agent's name are placeholders.  Never put the agent app inside Outlook, Teams or Dynamics 365. -->
+
+<!-- The agent app's Home, a custom app in Fluent 2: the agent's sparkle mark, a title and a subtitle, prompt-starter cards (an icon, a
+     short title, the prompt), then the prompt.  The prompt types itself on beat 1; the presenter clicks send. -->
+<section class="scene zoom" id="home" data-title="Home">
+  <div class="cpa">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <nav class="cpa-side">
+        <div class="cpa-brand"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span><span class="wm">[[App name]]</span><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button></div>
+        <div class="cpa-modes"><span class="on">Home</span><span>Agents</span><span>Activity</span></div>
+        <div class="cpa-nav">
+          <div class="on"><span class="plus"><i class="ic" data-icon="add"></i></span>New</div>
+          <div><i class="ic" data-icon="search"></i>Search</div>
+          <div><i class="ic" data-icon="library"></i>Library</div>
+          <div><i class="ic" data-icon="options"></i>Skills</div>
+          <div><i class="ic" data-icon="flash"></i>Automations</div>
+          <div><i class="ic" data-icon="more_horizontal"></i>More</div>
+          <div class="hdr">Recent</div>
+          <div><span class="lbl">[[An earlier conversation]]</span></div>
+          <div><span class="lbl">[[Another one]]</span></div>
+        </div>
+        <div class="cpa-me"><span class="avatar sm" data-name="[[Person]]"></span><div><div class="strong">[[Person]]</div><div class="t-cap">[[Company]]</div></div></div>
+      </nav>
+      <div class="cpa-main">
+        <div class="cpa-top"><span class="pick"><i class="ic" data-icon="plug_connected"></i>[[Connected sources]]<i class="ic" data-icon="chevron_down"></i></span><span class="end"><button class="btn icon"><i class="ic shield" data-icon="shield_checkmark"></i></button><button class="btn icon"><i class="ic" data-icon="chat_add"></i></button></span></div>
+        <div class="cpa-home">
+          <span class="cp-mark cpa-logo"><i class="ic grad" data-icon="sparkle_filled"></i></span>
+          <h1 class="cpa-hello">[[Greeting, the way the agent greets this person]]</h1>
+          <p class="cpa-sub">[[One line on what the agent can help with today]]</p>
+          <div class="cpa-chips"><span><i class="ic" data-icon="lightbulb"></i><b>[[Starter title]]</b>[[The prompt it fills in]]</span><span><i class="ic" data-icon="data_trending"></i><b>[[Starter title]]</b>[[The prompt it fills in]]</span><span><i class="ic" data-icon="mail"></i><b>[[Starter title]]</b>[[The prompt it fills in]]</span></div>
+          <div class="cpa-prompt">
+            <div class="ph" data-hide="1">Ask [[App name]]</div>
+            <div class="txt" data-beat="1" data-auto="500"><span data-type>[[What they ask, in their words]]</span></div>
+            <div class="tools"><button class="btn icon"><i class="ic" data-icon="add"></i></button><span class="cpa-switch"><span class="on">Chat</span><span>Agent</span></span><span class="grow"></span><button class="btn icon"><i class="ic" data-icon="mic"></i></button><button class="cpa-send" data-go="next" data-cue><i class="ic" data-icon="send_filled"></i></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- Agent chat, a custom app in Fluent 2: the person asked (a brand-tinted message); the agent answers under its
+     header (.cp-who: sparkle mark and its name), shows its work in an activity card (steps, a thinking node that reasons with the story's
+     own names and numbers) with a latency pill under it, answers in a card with sources and the message footer
+     (.cp-acts), and stops for approval before anything leaves the organization.  Beats 1-5 play on their own; the presenter clicks the approve button,
+     then the bridge chip.  Any part can stand alone: the trace, the answer, or the approval card in another view. -->
+<section class="scene zoom" id="chat" data-title="Agent chat">
+  <div class="cpa">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <nav class="cpa-side">
+        <div class="cpa-brand"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span><span class="wm">[[App name]]</span><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button></div>
+        <div class="cpa-modes"><span class="on">Home</span><span>Agents</span><span>Activity</span></div>
+        <div class="cpa-nav">
+          <div><span class="plus"><i class="ic" data-icon="add"></i></span>New</div>
+          <div><i class="ic" data-icon="search"></i>Search</div>
+          <div><i class="ic" data-icon="library"></i>Library</div>
+          <div><i class="ic" data-icon="options"></i>Skills</div>
+          <div><i class="ic" data-icon="flash"></i>Automations</div>
+          <div><i class="ic" data-icon="more_horizontal"></i>More</div>
+          <div class="hdr">Recent</div>
+          <div class="on"><span class="lbl">[[This conversation]]</span></div>
+          <div><span class="lbl">[[An earlier conversation]]</span></div>
+          <div><span class="lbl">[[Another one]]</span></div>
+        </div>
+        <div class="cpa-me"><span class="avatar sm" data-name="[[Person]]"></span><div><div class="strong">[[Person]]</div><div class="t-cap">[[Company]]</div></div></div>
+      </nav>
+      <div class="cpa-main">
+        <div class="cpa-top"><span class="ttl">[[Conversation title]]</span><span class="end"><button class="btn icon"><i class="ic shield" data-icon="shield_checkmark"></i></button><button class="btn icon"><i class="ic" data-icon="more_horizontal"></i></button></span></div>
+        <div class="cpa-work">
+          <div class="cpa-conv">
+            <div class="cpa-chat">
+              <div class="cp-user">[[What the person asks, in their words]]</div>
+              <div class="cp-who" data-beat="1" data-auto="500"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div>
+              <!-- The agent's work (look-and-feel.md, "The agent's work, in Fluent"): steps are -ing verb + the thing + where from;
+                   the thought is first person, present tense, with the data sheet's real names and numbers. -->
+              <div class="work-box" data-beat="1" data-auto="500"><div class="sum"><span class="on-run">Working on it</span><span class="on-done"><span class="n"></span> complete</span><i class="ic" data-icon="chevron_down"></i></div>
+                <ul class="work">
+                  <li data-beat="1" data-auto="500">[[Reading what, from where]]</li>
+                  <li class="think open" data-beat="2" data-auto="1200"><span class="lbl"><span class="on-run">Thinking…</span><span class="on-done">Thought process</span><i class="ic" data-icon="chevron_right"></i></span>
+                    <div class="thought" data-type="words"><p>[[What I'm weighing, with the real names and numbers]]</p><p>[[What doesn't add up, and what I'll do about it]]</p></div></li>
+                  <li data-beat="3" data-auto="600">[[Checking what, against which record]]</li>
+                </ul></div>
+              <div class="cp-status" data-beat="1" data-auto="500" data-hide="4"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span><span class="t" data-hide="3">[[What it's doing now, casually]]</span><span class="t" data-beat="3">[[What it's doing next]]</span></div>
+              <div class="cp-turn" data-beat="4" data-auto="900"><div class="cp-resp"><p data-type="words">[[The answer: what it found, and the one thing that needs the person]]<span class="cite">1</span></p></div>
+                <div class="refs"><span class="ref"><span class="oi [[product]]"></span>[[Source it used]]</span><span class="ref"><i class="ic" data-icon="document"></i>[[Another source]]</span></div><div class="cp-acts"><button class="btn icon" aria-label="Copy"><i class="ic" data-icon="copy"></i></button><button class="btn icon" aria-label="Like"><i class="ic" data-icon="thumb_like"></i></button><button class="btn icon" aria-label="Dislike"><i class="ic" data-icon="thumb_dislike"></i></button><span class="cp-ai">AI-generated content may be incorrect</span></div>
+              </div>
+              <div class="acard" data-beat="5" data-auto="900">
+                <div class="acard-head"><i class="ic" data-icon="send" style="color:var(--brand)"></i><div class="grow strong">[[What it wants to do]]</div><span class="mode approval"><i class="ic" data-icon="shield_checkmark"></i>Needs your approval</span></div>
+                <div class="acard-body col" style="gap:12px">
+                  <div class="kv" style="grid-template-columns:96px 1fr"><span>[[Field]]</span><span>[[Value]]</span><span>[[Field]]</span><span class="strong">[[The value that matters]]</span></div>
+                  <ul class="checks"><li>[[A check it passed]]</li><li class="warn">[[Something the person should know first]]</li></ul>
+                  <div class="policy"><i class="ic" data-icon="lock_closed"></i>[[Why this waits for a person: the policy]]</div>
+                </div>
+                <div class="acard-foot"><span class="row" data-hide="6"><button class="btn primary" data-go="next" data-cue>[[Approve and act]]</button><button class="btn">[[Edit]]</button><button class="btn subtle">Decline</button></span><span class="row" data-beat="6" style="color:var(--success-fg)"><i class="ic" data-icon="checkmark_circle_filled"></i><span class="strong">[[What happened, where, and when]]</span></span></div>
+              </div>
+              <div class="chips" data-beat="7" data-auto="600"><button class="chip" data-go="next" data-cue>[[The next thing the presenter clicks]]</button></div>
+            </div>
+            <div class="cpa-prompt"><div class="ph">Ask [[App name]]</div><div class="tools"><button class="btn icon"><i class="ic" data-icon="add"></i></button><span class="cpa-switch"><span class="on">Chat</span><span>Agent</span></span><span class="grow"></span><button class="btn icon"><i class="ic" data-icon="mic"></i></button><span class="cpa-send off"><i class="ic" data-icon="send_filled"></i></span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- The agent answers from Power BI: a visual in the answer, cited, and the report in the app's browser pane.
+     The answer, the visual and the report use the same numbers.  Syntax: references/engine.md (data-chart). -->
+<section class="scene zoom" id="pbi-answer" data-title="Answer from Power BI">
+  <div class="cpa nav-off">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <div class="cpa-main">
+        <div class="cpa-top"><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button><span class="ttl">[[Conversation title]]</span><span class="end"><button class="btn icon"><i class="ic shield" data-icon="shield_checkmark"></i></button><button class="btn icon"><i class="ic" data-icon="more_horizontal"></i></button></span></div>
+        <div class="cpa-work">
+          <div class="cpa-conv">
+            <div class="cpa-chat">
+              <div class="cp-user">[[The question about a number]]</div>
+              <div class="cp-who" data-beat="1" data-auto="400"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div>
+              <div class="work-box" data-beat="1" data-auto="400"><div class="sum"><span class="on-run">Working on it</span><span class="on-done"><span class="n"></span> complete</span><i class="ic" data-icon="chevron_down"></i></div>
+                <ul class="work"><li data-beat="1" data-auto="400">[[Finding the report, by name]]</li><li data-beat="2" data-auto="900">[[Querying its semantic model]]</li></ul></div>
+              <div class="cp-turn" data-beat="3" data-auto="1100"><div class="cp-resp"><p data-type="words">[[The answer in one or two sentences]]<span class="cite">1</span></p>
+                <figure class="pbi" style="margin-top:12px" data-chart="line" data-h="180" data-fmt="0" data-xname="[[Axis]]"
+                  data-x="[[A]],[[B]],[[C]],[[D]],[[E]],[[F]]" data-series="[[Actual]]:1,2,3,4,,; [[Plan]]:1,2,3,4,5,6; [[Forecast]]:,,,4,5,5" data-dash="[[Forecast]]">
+                  <figcaption class="pbi-head"><b>[[Visual title]]</b><span>[[Subtitle]]</span></figcaption>
+                  <div class="pbi-tip" data-at="[[F]]" data-beat="4" data-auto="500"><span>[[Tooltip label]]</span><b class="down">[[Value]]</b></div>
+                </figure></div>
+                <div class="refs"><span class="ref"><span class="oi powerbi"></span>[[Report name]] · Power BI</span></div>
+                <div class="cp-acts"><button class="btn icon" aria-label="Copy"><i class="ic" data-icon="copy"></i></button><button class="btn icon" aria-label="Like"><i class="ic" data-icon="thumb_like"></i></button><button class="btn icon" aria-label="Dislike"><i class="ic" data-icon="thumb_dislike"></i></button><span class="cp-ai">AI-generated content may be incorrect</span></div>
+              </div>
+              <div class="chips" data-beat="5" data-auto="500"><button class="chip" data-go="next" data-cue><span class="oi powerbi"></span>Open in Power BI</button></div>
+            </div>
+            <div class="cpa-prompt"><div class="ph">Ask [[App name]]</div><div class="tools"><button class="btn icon"><i class="ic" data-icon="add"></i></button><span class="cpa-switch"><span class="on">Chat</span><span>Agent</span></span><span class="grow"></span><span class="cpa-send off"><i class="ic" data-icon="send_filled"></i></span></div></div>
+          </div>
+          <aside class="cpa-pane" data-beat="6" style="--pane:700px">
+            <div class="cpa-url"><button class="btn icon"><i class="ic" data-icon="arrow_left"></i></button><button class="btn icon"><i class="ic" data-icon="arrow_clockwise"></i></button><span class="addr"><i class="ic" data-icon="globe"></i>app.powerbi.com<i class="ic" data-icon="dismiss"></i></span><span class="end"><button class="btn icon"><i class="ic" data-icon="full_screen_maximize"></i></button><button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></span></div>
+            <div class="cpa-page">
+              <div class="pbi-app">
+                <div class="pbi-bar"><span class="oi powerbi"></span><span class="crumb">Power BI · [[Workspace]] · <b>[[Report name]]</b></span><span class="end"><span class="avatar xs" data-name="[[Person]]"></span></span></div>
+                <div class="pbi-act"><span>File<i class="ic" data-icon="chevron_down"></i></span><span>Export<i class="ic" data-icon="chevron_down"></i></span><span><i class="ic" data-icon="share"></i>Share</span><span><i class="ic grad" data-icon="sparkle"></i>Copilot</span></div>
+                <div class="pbi-main">
+                  <div class="pbi-canvas"><div class="pbi-page">
+                    <div class="pbi-slicer" style="grid-column:span 6"><b>[[Slicer]]</b><span>[[Value]]<i class="ic" data-icon="chevron_down"></i></span></div>
+                    <div class="pbi-slicer" style="grid-column:span 6"><b>[[Slicer]]</b><span>[[Value]]<i class="ic" data-icon="chevron_down"></i></span></div>
+                    <div class="pbi card" style="grid-column:span 6"><span class="l">[[Measure]]</span><span class="v" data-count>[[Value]]</span><span class="r"><span>[[Context]]</span></span></div>
+                    <div class="pbi card" style="grid-column:span 6"><span class="l">[[Measure]]</span><span class="v" data-count>[[Value]]</span><span class="r"><span>[[Context]]</span><b class="down">[[Delta]]</b></span></div>
+                    <figure class="pbi" style="grid-column:span 12" data-chart="bar" data-style="labels" data-h="160" data-fmt="0" data-xname="[[Axis]]"
+                      data-x="[[A]],[[B]],[[C]]" data-series="[[Measure]]:3,2,1">
+                      <figcaption class="pbi-head"><b>[[Visual title]]</b><span>[[Subtitle]]</span></figcaption>
+                    </figure>
+                  </div></div>
+                  <div class="pbi-filters"><i class="ic" data-icon="filter"></i><span>Filters</span></div>
+                </div>
+                <div class="pbi-tabs"><span class="on">[[Page]]</span><span>[[Page]]</span></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- Agent mode: the agent runs a multi-step process, drawn in Fluent 2 (look-and-feel.md, "The agent's work,
+     in Fluent").  The conversation shows the work as it happens (an activity card with steps and a thinking node, a
+     latency pill; .clip keeps the latest in view).  The Workspace drawer shows the plan (Steps, with a counter the engine fills in), what it made
+     (Output), what the person gave it (References) and the plugins it used.  It stops once for the person's input (an
+     options card) and runs the rest.  Add an approval step with the approval card from the chat outline.  Step syntax:
+     references/engine.md "Process steps".  The li.skill and the Plugins chip are optional: keep them only if the
+     story uses the customer's own skill (story-and-data.md, "The customer's own way of working").  If not, cut the
+     li.skill, and in the chip name a skill it did use (an .oi product mark in place of the .plug) or cut the section. -->
+<section class="scene zoom" id="plan" data-title="Multi-step plan">
+  <div class="cpa nav-off">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <div class="cpa-main">
+        <div class="cpa-top"><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button><span class="ttl">[[Conversation title]]</span><span class="end"><button class="btn icon"><i class="ic shield" data-icon="shield_checkmark"></i></button><button class="btn icon"><i class="ic" data-icon="more_horizontal"></i></button></span></div>
+        <div class="cpa-work">
+          <div class="cpa-conv">
+            <div class="cpa-chat">
+              <div class="cp-time">1 min ago</div>
+              <div class="cp-file"><span class="oi [[word]]"></span><div><div class="nm">[[What the person attached]]</div><span class="t-cap">[[Word document]]</span></div></div>
+              <div class="cp-user">[[What the person asked the agent to run]]</div>
+              <div class="cp-who" data-beat="1" data-auto="500"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div>
+              <div class="cp-turn" data-beat="1" data-auto="500"><div class="cp-resp"><p data-type="words">[[How the agent will go about it, and when it will stop for the person]]</p></div></div>
+              <div class="work-box clip" data-beat="2" data-auto="700"><div class="sum"><span class="on-run">Working on it</span><span class="on-done"><span class="n"></span> complete</span><i class="ic" data-icon="chevron_down"></i></div>
+                <ul class="work">
+                  <li class="skill" data-beat="2" data-auto="700"><span class="plug" style="--plug:[[#their colour]]"><i class="ic" data-icon="[[glyph]]"></i></span>Reviewed custom skill <b>[[their-skill-name]]</b></li>
+                  <li data-beat="3" data-auto="600">[[Reading what, from where]]</li>
+                  <li class="think open" data-beat="4" data-auto="1200"><span class="lbl"><span class="on-run">Thinking…</span><span class="on-done">Thought process</span><i class="ic" data-icon="chevron_right"></i></span>
+                    <div class="thought" data-type="words"><p>[[What I'm weighing, with the real names and numbers, and the rule of theirs that applies]]</p><p>[[What I'll do next, and why it needs the person]]</p></div></li>
+                  <li data-beat="5" data-auto="600">[[Drafting what, for whom]]</li>
+                </ul>
+                <button class="more">Show more</button></div>
+              <div class="cp-status" data-beat="2" data-auto="700" data-hide="6"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span><span class="t">[[What it's doing now, casually]]</span></div>
+              <div class="acard" data-beat="6" data-hide="7">
+                <div class="acard-head"><i class="ic" data-icon="form" style="color:var(--brand)"></i><div class="grow strong">[[The decision that's theirs]]</div><span class="mode input"><i class="ic" data-icon="person_edit"></i>Needs your input</span></div>
+                <div class="acard-body col" style="gap:8px">
+                  <p class="t-body" style="margin:0 0 4px">[[What the agent found that bears on the decision]]</p>
+                  <div class="opt"><span class="radio"></span><div><span class="t">[[Option]]</span>[[What it means]]</div></div>
+                  <div class="opt" data-go="next" data-cue><span class="radio"></span><div><span class="t">[[Option the person picks]]</span>[[What it means]]</div></div>
+                  <div class="opt"><span class="radio"></span><div><span class="t">[[Option]]</span>[[What it means]]</div></div>
+                </div>
+              </div>
+              <div class="cp-user" data-beat="7">[[Option the person picks]]</div>
+              <div class="cp-who" data-beat="9" data-auto="700"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div>
+              <div class="cp-turn" data-beat="9" data-auto="700"><div class="cp-resp"><p data-type="words">[[What's done, and what the person decided]]</p></div><div class="cp-acts"><button class="btn icon" aria-label="Copy"><i class="ic" data-icon="copy"></i></button><button class="btn icon" aria-label="Like"><i class="ic" data-icon="thumb_like"></i></button><button class="btn icon" aria-label="Dislike"><i class="ic" data-icon="thumb_dislike"></i></button><span class="cp-ai">AI-generated content may be incorrect</span></div></div>
+            </div>
+            <div class="cpa-prompt"><div class="ph">Ask [[App name]]</div><div class="tools"><button class="btn icon"><i class="ic" data-icon="add"></i></button><span class="cpa-switch"><span>Chat</span><span class="on">Agent</span></span><span class="grow"></span><span class="cpa-send off"><i class="ic" data-icon="send_filled"></i></span></div></div>
+          </div>
+          <aside class="cpa-pane ws" data-beat="1" style="--pane:420px">
+            <div class="cpa-pane-head">Workspace<span class="end"><button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></span></div>
+            <div class="cpa-pane-body">
+              <div class="ws-sec"><h4>Steps<span class="end"><span class="ws-count"></span><i class="ic" data-icon="chevron_down"></i></span></h4>
+                <ol class="steps">
+                  <li class="step" data-run-at="2" data-auto="700" data-run="3600"><div class="st"><span class="st-t">[[Doing the routine part, -ing form]]</span></div></li>
+                  <li class="step" data-wait-at="6" data-auto="900" data-done-at="7"><div class="st"><span class="st-t">[[Getting the person's decision on what]]</span></div></li>
+                  <li class="step" data-run-at="8" data-auto="500" data-run="1200"><div class="st"><span class="st-t">[[Doing what follows from the decision]]</span></div></li>
+                </ol></div>
+              <div class="ws-sec"><h4>Output<span class="end"><i class="ic" data-icon="chevron_down"></i></span></h4>
+                <div class="ws-item" data-beat="5"><span class="oi [[word]]"></span><div><div class="nm">[[What it made]]</div><span class="t-cap">Updated [[date]]</span></div></div>
+                <div class="ws-item" data-beat="8"><i class="ic" data-icon="globe"></i><div><div class="nm">[[What it made next]]</div><span class="t-cap">Updated [[date]]</span></div></div>
+              </div>
+              <div class="ws-sec"><h4>References<span class="end"><button class="btn icon"><i class="ic" data-icon="folder_open"></i></button><i class="ic" data-icon="chevron_down"></i></span></h4>
+                <div class="ws-item"><span class="oi [[word]]"></span><div><div class="nm">[[What the person attached]]</div></div></div>
+              </div>
+              <div class="ws-sec"><h4>Plugins<span class="end"><i class="ic" data-icon="chevron_down"></i></span></h4>
+                <div class="ws-plugs"><span class="ws-plug"><span class="plug" style="--plug:[[#their colour]]"><i class="ic" data-icon="[[glyph]]"></i></span>[[their-skill-name]]</span></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- Settings, Skills tab, drawn with Fluent 2 parts (a TabList, a search box, an "Add" split button, row cards):
+     where people add, create and share the skills the agent uses.  Use it only when the story is about the customer's
+     own way of working: their skill sits in "Your skills", next to the built-in ones.  Tabs: Preferences, Connectors,
+     Skills; on the Connectors tab the lists can be "Connected" (rows with a .tgl toggle) and "Available".  Their row
+     appears on beat 1, the way a new skill shows up once it's saved.  Show writing or changing a skill as a
+     conversation with the agent (story-and-data.md). -->
+<section class="scene zoom" id="skills" data-title="Settings: skills">
+  <div class="cpa nav-off">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <div class="cpa-main">
+        <div class="cpa-top"><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button></div>
+        <div class="cz">
+          <h1>Settings</h1>
+          <div class="cz-tabs"><span>Preferences</span><span>Connectors</span><span class="on">Skills</span></div>
+          <div class="cz-bar"><div class="cz-search"><i class="ic" data-icon="search"></i>Search skills</div><span class="cz-add"><span><i class="ic" data-icon="add"></i>Add</span><span><i class="ic" data-icon="chevron_down"></i></span></span></div>
+          <div class="cz-sec"><h3>Your skills</h3>
+            <div class="cz-row" data-beat="1" data-auto="800"><span class="plug l" style="--plug:[[#their colour]]"><i class="ic" data-icon="[[glyph]]"></i></span><div><div class="nm">[[their-skill-name]]</div><span class="t-cap">[[Its description: what it does and when to use it]]</span></div><i class="ic" data-icon="chevron_right"></i></div>
+            <div class="cz-row"><span class="plug l" style="--plug:[[#another colour]]"><i class="ic" data-icon="[[glyph]]"></i></span><div><div class="nm">[[another-skill]]</div><span class="t-cap">[[Its description]]</span></div><i class="ic" data-icon="chevron_right"></i></div>
+          </div>
+          <div class="cz-sec"><h3>Built-in</h3>
+            <div class="cz-row"><span class="cz-ic"><span class="oi word"></span></span><div><div class="nm">Word</div><span class="t-cap">Create and edit Word documents.</span></div><i class="ic" data-icon="chevron_right"></i></div>
+            <div class="cz-row"><span class="cz-ic"><span class="oi excel"></span></span><div><div class="nm">Excel</div><span class="t-cap">Create and edit Excel spreadsheets.</span></div><i class="ic" data-icon="chevron_right"></i></div>
+            <div class="cz-row"><span class="cz-ic"><span class="oi outlook"></span></span><div><div class="nm">Email</div><span class="t-cap">Compose, reply, forward, and send emails. Save drafts and manage attachments.</span></div><i class="ic" data-icon="chevron_right"></i></div>
+            <span class="cz-more">Show more<i class="ic" data-icon="chevron_down"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says: whose method this is, who wrote it, who it's shared with]]</aside>
+</section>
+
+<!-- Proof in the app's browser pane.  It opens with the agent at work in the
+     customer's own system (unbranded .lob, reached through a connector): the .cp-browsing frame and the .cp-cursor
+     pointer are on, the prompt reads "Working on it. What's next?" with a stop button, and the new row arrives.  When
+     it's done (beat 2) the frame and pointer go, the row's history shows, and a source chip in the conversation opens
+     the Dynamics 365 record with the change (.diff) and the timeline entry marked as the agent's.  No tab strip: the
+     address pill shows where the browser is. -->
+<section class="scene zoom" id="proof" data-title="Proof in the browser pane">
+  <div class="cpa nav-off">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <div class="cpa-main">
+        <div class="cpa-top"><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button><span class="ttl">[[Conversation title]]</span></div>
+        <div class="cpa-work">
+          <div class="cpa-conv">
+            <div class="cpa-chat"><div class="cp-who"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div><div class="cp-turn"><div class="cp-resp"><p>[[What the agent says it's changing, and where]]</p></div>
+              <div class="refs" data-beat="2"><span class="ref" data-go="next" data-cue><span class="oi sales"></span>[[Record name]]</span></div></div></div>
+            <div class="cpa-prompt"><div class="ph" data-hide="2">Working on it. What's next?</div><div class="ph" data-beat="2">Ask [[App name]]</div><div class="tools"><span class="grow"></span><span class="cpa-send stop" data-hide="2"><i class="ic" data-icon="stop"></i></span><span class="cpa-send off" data-beat="2"><i class="ic" data-icon="send_filled"></i></span></div></div>
+          </div>
+          <aside class="cpa-pane" style="--pane:1000px">
+            <div class="col grow" style="gap:0;min-height:0" data-hide="3">
+              <div class="cpa-url"><button class="btn icon"><i class="ic" data-icon="arrow_left"></i></button><button class="btn icon"><i class="ic" data-icon="arrow_clockwise"></i></button><span class="addr"><i class="ic" data-icon="globe"></i>[[system.company.com]]<i class="ic" data-icon="dismiss"></i></span><span class="end"><button class="btn icon"><i class="ic" data-icon="full_screen_maximize"></i></button><button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></span></div>
+              <div class="cpa-page">
+                <div class="cp-browsing" data-hide="2"><span class="lbl"><i class="ic" data-icon="cursor"></i>[[Agent name]] is browsing</span></div>
+                <span class="cp-cursor" data-hide="2" style="left:58%;top:34%"><span>[[Agent name]] is working</span></span>
+                <div class="lob">
+                <header class="lob-bar"><div class="name"><span class="glyph"><i class="ic" data-icon="document"></i></span>[[Plain functional name]]</div><div class="search"><i class="ic" data-icon="search"></i>[[Search hint]]</div><span class="avatar sm" data-name="[[Person]]"></span></header>
+                <div class="lob-body"><div class="lob-page">
+                  <div class="lob-head"><h1>[[List name]]</h1><span class="grow"></span><button class="btn"><i class="ic" data-icon="filter"></i>Filter</button></div>
+                  <div class="section" style="padding:8px 8px 4px"><table class="grid">
+                    <tr><th>[[Column]]</th><th>[[Column]]</th><th class="num">[[Amount]]</th><th>Status</th></tr>
+                    <tr class="new" data-beat="1" data-auto="600"><td class="strong">[[New row]]</td><td>[[Value]]</td><td class="num">[[Value]]</td><td><span class="badge brand">[[Status]]</span></td></tr>
+                    <tr><td class="strong">[[Older row]]</td><td>[[Value]]</td><td class="num">[[Value]]</td><td><span class="badge">[[Status]]</span></td></tr>
+                    <tr><td class="strong">[[Older row]]</td><td>[[Value]]</td><td class="num">[[Value]]</td><td><span class="badge success">[[Status]]</span></td></tr>
+                  </table></div>
+                  <div class="section" data-beat="2"><h3>[[Row]] history</h3><div class="log">
+                    <div><span class="t">[[Time]]</span><span class="cp-mark" style="width:20px;height:20px"><i class="ic grad" data-icon="sparkle_filled"></i></span><span>[[What the agent did]]<span class="by">[[On whose behalf, through which connector]]</span></span><span></span></div>
+                    <div><span class="t">[[Time]]</span><span class="avatar xs" data-name="[[Person]]"></span><span>[[What the person approved]]<span class="by">[[Person]]</span></span><span></span></div>
+                  </div></div>
+                </div></div>
+              </div></div>
+            </div>
+            <div class="col grow" style="gap:0;min-height:0" data-beat="3">
+              <div class="cpa-url"><button class="btn icon"><i class="ic" data-icon="arrow_left"></i></button><button class="btn icon"><i class="ic" data-icon="arrow_clockwise"></i></button><span class="addr"><i class="ic" data-icon="globe"></i>[[org]].crm.dynamics.com<i class="ic" data-icon="dismiss"></i></span><span class="end"><button class="btn icon"><i class="ic" data-icon="full_screen_maximize"></i></button><button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></span></div>
+              <div class="cpa-page"><div class="m365 d3">
+                <header class="d3-bar"><div class="waffle"><i class="ic" data-icon="grid"></i></div><div class="app-name">Dynamics 365<span>[[App]]</span></div><div class="search"><i class="ic" data-icon="search"></i>Search</div><span class="avatar sm" data-name="[[Person]]"></span></header>
+                <div class="m365-body"><div class="d3-page">
+                  <div class="d3-head"><div class="d3-title"><span class="avatar org md" data-name="[[Account]]"></span><div><div class="name">[[Record name]]</div><div class="type">[[Record type]]</div></div>
+                    <div class="d3-headfields"><div class="field"><label>[[Field]]</label><div>[[Value]]</div></div><div class="field"><label>[[Changed field]]</label><div><span class="diff"><span class="old">[[Before]]</span><i class="ic" data-icon="arrow_right"></i><span class="new">[[After]]</span></span></div></div></div></div>
+                    <div class="tabs"><span class="on">Summary</span><span>Related</span></div></div>
+                  <div class="d3-content" style="grid-template-columns:1fr 1.25fr">
+                    <div class="section"><h3>[[Section]]</h3><div class="kv" style="grid-template-columns:110px 1fr"><span>[[Field]]</span><span>[[Value]]</span><span>[[Field]]</span><span>[[Value]]</span></div></div>
+                    <div class="section"><h3>Timeline</h3><div class="timeline">
+                      <div class="tl-item ai-touched" data-beat="4" data-auto="700"><div class="tl-ico"><i class="ic" data-icon="document"></i></div><div class="grow"><div class="strong">[[What the agent added]]</div><div class="ai-flag"><i class="ic grad" data-icon="sparkle_filled"></i>[[Which agent · approved by whom]]</div></div><span class="when">[[Time]]</span></div>
+                      <div class="tl-item"><div class="tl-ico"><i class="ic" data-icon="mail"></i></div><div class="grow"><div class="strong">[[Earlier activity]]</div><div class="t-cap muted">[[Who]]</div></div><span class="when">[[When]]</span></div>
+                    </div></div>
+                  </div>
+                </div></div>
+              </div></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- Teams: people reached where they already work.  A card posted with the agent app, then replies arrive.  This
+     is also where a colleague can message or @mention the agent in Teams: it answers as itself (its own name and
+     sparkle mark, clearly working for its owner), never as the person (look-and-feel.md, "The agent as a
+     teammate").  "Search or ask Copilot" and the Copilot entry are Teams' own chrome: leave them. -->
+<section class="scene zoom" id="teams" data-title="Teams chat">
+  <div class="tm">
+    <header class="tm-bar"><i class="ic" data-icon="panel_left"></i><span class="grow"></span><i class="ic muted" data-icon="chevron_left"></i><i class="ic muted" data-icon="chevron_right"></i><div class="search"><i class="ic" data-icon="search"></i>Search or ask Copilot (Ctrl+E)</div><span class="tm-org">[[Company]]<span class="avatar xs" data-name="[[Person]]"><i class="pres"></i></span></span><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></header>
+    <div class="tm-body">
+      <nav class="tm-rail"><span title="Activity"><i class="ic" data-icon="alert"></i></span><span class="on" title="Chat"><i class="ic" data-icon="chat"></i><span class="badge">1</span></span><span title="Calendar"><i class="ic" data-icon="calendar_ltr"></i></span><span title="Teams"><i class="ic" data-icon="people_team"></i></span><span title="Apps"><i class="ic" data-icon="apps"></i></span><span title="More"><i class="ic" data-icon="more_horizontal"></i></span></nav>
+      <div class="tm-list">
+        <div class="tm-list-head">Chat<span class="grow"></span><i class="ic" data-icon="more_horizontal"></i><i class="ic" data-icon="search"></i><i class="ic" data-icon="compose"></i></div>
+        <div class="tm-pills"><span>Unread</span><span>Channels</span><span>Chats</span><span>Meeting chats</span></div>
+        <div class="tm-item"><i class="ic s16" data-icon="sparkle"></i>Copilot</div>
+        <div class="tm-sec"><i class="ic" data-icon="chevron_down"></i>Favorites</div>
+        <div class="tm-item sel"><span class="avatar org" data-name="[[Group chat]]"></span><span class="ellipsis">[[Group chat]]</span></div>
+        <div class="tm-item unread"><span class="avatar" data-name="[[Colleague]]"><i class="pres"></i></span><span class="ellipsis">[[Colleague]]</span><span class="n">1</span></div>
+        <div class="tm-sec"><i class="ic" data-icon="chevron_down"></i>Chats</div>
+        <div class="tm-item"><span class="avatar" data-name="[[Colleague]]"><i class="pres away"></i></span><span class="ellipsis">[[Colleague]]</span></div>
+        <div class="tm-item"><span class="avatar" data-name="[[Colleague]]"><i class="pres"></i></span><span class="ellipsis">[[Colleague]]</span></div>
+      </div>
+      <div class="tm-main">
+        <div class="tm-head"><span class="avatar org" data-name="[[Group chat]]"></span>[[Group chat]]<div class="tabs"><span class="on">Chat</span><span>Shared</span><span>Notes</span></div><span class="end"><i class="ic" data-icon="people"></i><i class="ic" data-icon="search"></i><i class="ic" data-icon="more_horizontal"></i></span></div>
+        <div class="tm-chat">
+          <div class="tm-date">[[Day, date]]</div>
+          <div class="tm-msg"><span class="avatar" data-name="[[Colleague]]"></span><div><div class="meta"><b>[[Colleague]]</b>[[Time]]</div><div class="bubble">[[Earlier message]]</div></div></div>
+          <div class="tm-msg me"><div><div class="meta">[[Time]]</div>
+            <div class="bubble"><p style="margin:0 0 10px">[[Intro line]]</p>
+              <div class="acard" style="width:520px">
+                <div class="acard-head"><i class="ic s24" data-icon="task_list_ltr" style="color:var(--teams)"></i><div class="grow strong">[[Card title]]</div></div>
+                <div class="acard-body"><div class="item"><span class="avatar sm" data-name="[[Owner]]"></span><div class="grow">[[Item · date]]</div></div><div class="item"><span class="avatar sm" data-name="[[Owner]]"></span><div class="grow">[[Item · date]]</div></div></div>
+              </div></div>
+            <div class="t-cap muted row" style="justify-content:flex-end;gap:4px;margin-top:4px"><i class="ic s16" data-icon="sparkle"></i>Sent with [[App name]]</div></div></div>
+          <div class="tm-msg" data-beat="1" data-auto="700"><span class="avatar" data-name="[[Colleague]]"></span><div><div class="meta"><b>[[Colleague]]</b>[[Time]]</div><div class="bubble">[[Reply]]</div></div></div>
+        </div>
+        <div class="tm-compose">Type a message<span class="tools"><i class="ic" data-icon="edit"></i><i class="ic" data-icon="emoji"></i><i class="ic" data-icon="attach"></i><i class="ic" data-icon="sparkle"></i><i class="ic" data-icon="add"></i><i class="ic" data-icon="send"></i></span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- Agent activity: an agent with its own identity keeps working and comes back when it
+     needs the person.  The item that needs them arrives on beat 1; the presenter clicks its action.  Show it working
+     with the team, too: what colleagues asked it and what it answered, and where the owner stepped in. -->
+<section class="scene zoom" id="activity" data-title="Agent activity">
+  <div class="cpa">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <nav class="cpa-side">
+        <div class="cpa-brand"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span><span class="wm">[[App name]]</span><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button></div>
+        <div class="cpa-modes"><span>Home</span><span>Agents</span><span class="on">Activity</span></div>
+        <div class="cpa-nav">
+          <div class="on"><i class="ic" data-icon="grid"></i>Overview</div>
+          <div><i class="ic" data-icon="arrow_repeat_all"></i>Routines</div>
+          <div><i class="ic" data-icon="options"></i>Skills</div>
+          <div class="hdr">Agents</div>
+          <div><span class="ap-av sm"><i class="ic" data-icon="sparkle_filled"></i></span>[[Agent's job name]]</div>
+          <div class="sub"><span class="lbl">[[What it's watching]]</span></div>
+        </div>
+        <div class="cpa-me"><span class="avatar sm" data-name="[[Person]]"></span><div><div class="strong">[[Person]]</div><div class="t-cap">[[Company]]</div></div></div>
+      </nav>
+      <div class="cpa-main">
+        <div class="cpa-top"><span class="pick">[[Agent's job name]]</span></div>
+        <div class="cpa-over">
+          <div class="ap-hello"><span class="ap-av"><i class="ic" data-icon="sparkle_filled"></i></span><h1 class="cpa-hello">[[How the agent greets them: the state of things]]</h1></div>
+          <div class="cpa-prompt"><div class="ph">[[Ask the agent, or give it a routine]]</div><div class="tools"><span class="grow"></span><button class="btn icon"><i class="ic" data-icon="mic"></i></button></div></div>
+          <div class="feed">
+            <div class="feed-head">What's been happening<span>See all</span></div>
+            <div><div class="feed-day">[[Today]]</div>
+              <div class="feed-item need" data-beat="1" data-auto="700"><span class="t">[[Time]]</span><span class="dot"><i class="ic" data-icon="warning"></i></span>
+                <div><b>[[What needs the person]]</b><div class="det">[[Why now, and what it suggests]]</div></div>
+                <span class="row" data-hide="2"><button class="btn primary" data-go="next" data-cue>[[Action]]</button><button class="btn subtle">Not now</button></span>
+                <span class="row strong" data-beat="2" style="color:var(--success-fg);height:32px"><i class="ic" data-icon="checkmark_circle_filled"></i>[[Done]]</span></div>
+              <div class="feed-item"><span class="t">[[Time]]</span><span class="dot"><i class="ic" data-icon="checkmark"></i></span><div><b>[[What it handled on its own]]</b><div class="det">[[Where]]</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- Outlook mail: something reached someone's inbox, or a reply came back (arrives on beat 1). -->
+<section class="scene zoom" id="mail" data-title="Outlook mail">
+  <div class="m365 ol">
+    <header class="m365-bar"><div class="waffle"><i class="ic" data-icon="grid"></i></div><div class="app-name">Outlook</div><div class="search"><i class="ic" data-icon="search"></i>Search</div><div class="tools"><button class="btn icon"><i class="ic" data-icon="settings"></i></button></div><span class="avatar sm" data-name="[[Person]]"></span></header>
+    <div class="m365-body">
+      <nav class="app-rail"><span class="on"><i class="ic" data-icon="mail"></i></span><span><i class="ic" data-icon="calendar_ltr"></i></span><span><i class="ic" data-icon="people"></i></span><span><i class="ic" data-icon="apps"></i></span></nav>
+      <div class="col grow" style="gap:0;min-width:0">
+        <div class="ol-ribbon"><button class="btn primary"><i class="ic" data-icon="compose"></i>New mail</button><button class="btn subtle"><i class="ic" data-icon="delete"></i>Delete</button><button class="btn subtle"><i class="ic" data-icon="archive"></i>Archive</button><button class="btn subtle"><i class="ic" data-icon="arrow_reply"></i>Reply</button></div>
+        <div class="ol-main">
+          <nav class="ol-folders"><div class="hdr"><i class="ic" data-icon="chevron_down"></i>Favorites</div><div class="on"><i class="ic" data-icon="mail"></i>Inbox</div><div><i class="ic" data-icon="send"></i>Sent Items</div><div><i class="ic" data-icon="document"></i>Drafts</div></nav>
+          <div class="ol-list">
+            <div class="ol-list-head"><span class="on">Focused</span><span>Other</span></div>
+            <div class="ol-group">Today</div>
+            <div class="ol-mail unread" data-beat="1" data-auto="700"><span class="avatar" data-name="[[Sender]]"></span><div class="grow" style="min-width:0"><div class="row"><span class="from">[[Sender]]</span><span class="when">[[Time]]</span></div><div class="subj ellipsis">[[Subject]]</div><div class="prev ellipsis">[[Preview]]</div></div></div>
+            <div class="ol-mail sel"><span class="avatar" data-name="[[Sender]]"></span><div class="grow" style="min-width:0"><div class="row"><span class="from">[[Sender]]</span><span class="when">[[Time]]</span></div><div class="subj ellipsis">[[Subject]]</div><div class="prev ellipsis">[[Preview]]</div></div></div>
+            <div class="ol-mail"><span class="avatar" data-name="[[Sender]]"></span><div class="grow" style="min-width:0"><div class="row"><span class="from">[[Sender]]</span><span class="when">[[Time]]</span></div><div class="subj ellipsis">[[Subject]]</div><div class="prev ellipsis">[[Preview]]</div></div></div>
+          </div>
+          <div class="ol-read">
+            <div class="ol-read-subj">[[Subject]]</div>
+            <div class="ol-read-head"><span class="avatar md" data-name="[[Sender]]"></span><div class="grow"><div class="strong">[[Sender]]</div><div class="t-cap muted">To: [[Recipient]] · [[Time]]</div></div></div>
+            <div class="ol-read-body"><p>[[Greeting]]</p><p>[[Body]]</p><p>[[Sign-off]]</p>
+              <div class="t-cap muted row" style="gap:4px;margin-top:16px"><i class="ic s16" data-icon="sparkle"></i>[[Sent with App name after whom approved]]</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- Outlook calendar, work week: time was booked (the .ev.ai event appears on beat 1).  The grid starts at 8 AM:
+     grid-row = (hour - 8) x 2 + 1; column 2 is Monday.  Events under an hour: title only. -->
+<section class="scene zoom" id="calendar" data-title="Outlook calendar">
+  <div class="m365 ol">
+    <header class="m365-bar"><div class="waffle"><i class="ic" data-icon="grid"></i></div><div class="app-name">Outlook</div><div class="search"><i class="ic" data-icon="search"></i>Search</div><span class="avatar sm" data-name="[[Person]]"></span></header>
+    <div class="m365-body">
+      <nav class="app-rail"><span><i class="ic" data-icon="mail"></i></span><span class="on"><i class="ic" data-icon="calendar_ltr"></i></span><span><i class="ic" data-icon="people"></i></span><span><i class="ic" data-icon="apps"></i></span></nav>
+      <div class="col grow" style="gap:0;min-width:0">
+        <div class="ol-ribbon"><button class="btn primary"><i class="ic" data-icon="add"></i>New event</button><button class="btn subtle"><i class="ic" data-icon="calendar_ltr"></i>Work week</button></div>
+        <div class="cal-main">
+          <nav class="cal-side"><div class="hdr">My calendars</div><div><span class="sw"></span>Calendar</div><div class="hdr">People</div><div><span class="sw" style="background:#8764b8"></span>[[Colleague]]</div></nav>
+          <div class="cal">
+            <div class="cal-bar"><button class="btn subtle">Today</button><i class="ic muted" data-icon="chevron_left"></i><i class="ic muted" data-icon="chevron_right"></i><span class="t">[[Week]]</span></div>
+            <div class="cal-days"><div></div><div>Mon<b>[[d]]</b></div><div class="today">Tue<b>[[d]]</b></div><div>Wed<b>[[d]]</b></div><div>Thu<b>[[d]]</b></div><div>Fri<b>[[d]]</b></div></div>
+            <div class="cal-grid">
+              <div class="cal-h" style="grid-row:1">8 AM</div><div class="cal-h" style="grid-row:3">9 AM</div><div class="cal-h" style="grid-row:5">10 AM</div><div class="cal-h" style="grid-row:7">11 AM</div><div class="cal-h" style="grid-row:9">12 PM</div><div class="cal-h" style="grid-row:11">1 PM</div><div class="cal-h" style="grid-row:13">2 PM</div><div class="cal-h" style="grid-row:15">3 PM</div><div class="cal-h" style="grid-row:17">4 PM</div><div class="cal-h" style="grid-row:19">5 PM</div>
+              <div class="ev" style="grid-column:2;grid-row:3/5"><b>[[Event]]</b>[[Where]]</div>
+              <div class="ev c2" style="grid-column:3;grid-row:7/9"><b>[[Event]]</b>[[Where]]</div>
+              <div class="ev ai" data-beat="1" data-auto="700" style="grid-column:4;grid-row:13/15"><b>[[What the agent booked]]</b>[[Who · Set by agent name]]</div>
+              <div class="ev c3" style="grid-column:5;grid-row:5/8"><b>[[Event]]</b>[[Who]]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- Dynamics 365, full app: the record itself is the point and the browser pane would be too small.
+     The agent's change appears on beat 1. -->
+<section class="scene zoom" id="record" data-title="Dynamics 365 record">
+  <div class="m365 d3">
+    <header class="d3-bar"><div class="waffle"><i class="ic" data-icon="grid"></i></div><div class="app-name">Dynamics 365<span>[[App]]</span></div><div class="search"><i class="ic" data-icon="search"></i>Search</div><span class="tools"><i class="ic" data-icon="add"></i><i class="ic" data-icon="settings"></i><i class="ic" data-icon="question_circle"></i><i class="ic" data-icon="alert"></i></span><span class="d3-copilot"><span class="oi copilot"></span>Copilot</span><span class="avatar sm" data-name="[[Person]]"></span></header>
+    <div class="m365-body">
+      <nav class="d3-nav"><div class="menu"><i class="ic" data-icon="navigation"></i></div><div><i class="ic" data-icon="home"></i>Home</div><div><i class="ic" data-icon="clock"></i>Recent<i class="ic chev" data-icon="chevron_down"></i></div><div><i class="ic" data-icon="pin"></i>Pinned<i class="ic chev" data-icon="chevron_down"></i></div><div class="hdr">[[Group]]</div><div class="on"><i class="ic" data-icon="document"></i>[[Table]]</div><div><i class="ic" data-icon="people"></i>[[Table]]</div><div><i class="ic" data-icon="target"></i>[[Table]]</div><div class="hdr">[[Group]]</div><div><i class="ic" data-icon="building"></i>[[Table]]</div><div><i class="ic" data-icon="contact_card"></i>[[Table]]</div><div class="area"><span class="sq">[[A]]</span>[[Area]]<i class="ic chev" data-icon="chevron_down"></i></div></nav>
+      <div class="d3-page">
+        <div class="d3-cmd"><button class="btn"><i class="ic" data-icon="arrow_left"></i></button><button class="btn"><i class="ic" data-icon="arrow_sync"></i>Refresh</button><button class="btn"><i class="ic" data-icon="share"></i>Share</button></div>
+        <div class="d3-head">
+          <div class="d3-title"><span class="avatar org md" data-name="[[Account]]"></span><div><div class="name">[[Record name]]</div><div class="type">[[Record type]]</div></div>
+            <div class="d3-headfields"><div class="field"><label>[[Field]]</label><div>[[Value]]</div></div><div class="field"><label>[[Field]]</label><div>[[Value]]</div></div><div class="field"><label>Owner</label><div>[[Person]]</div></div></div></div>
+          <div class="tabs"><span class="on">Summary</span><span>Related</span></div>
+        </div>
+        <div class="bpf"><span class="stage-step done">[[Stage]]</span><span class="stage-step on">[[Stage]]</span><span class="stage-step">[[Stage]]</span></div>
+        <div class="d3-content">
+          <div class="section"><h3>[[Section]]</h3><div class="kv" style="grid-template-columns:120px 1fr"><span>[[Field]]</span><span>[[Value]]</span><span>[[Field]]</span><span>[[Value]]</span></div></div>
+          <div class="section"><h3>[[Section]]</h3><div class="col" style="gap:10px"><div class="row"><span class="avatar sm" data-name="[[Contact]]"></span><div class="grow">[[Contact]]<div class="t-cap muted">[[Role]]</div></div></div></div></div>
+          <div class="section"><h3>Timeline</h3><div class="timeline">
+            <div class="tl-item ai-touched" data-beat="1" data-auto="700"><div class="tl-ico"><i class="ic" data-icon="document"></i></div><div class="grow"><div class="strong">[[What the agent added]]</div><div class="ai-flag"><i class="ic grad" data-icon="sparkle_filled"></i>[[Which agent · approved by whom]]</div></div><span class="when">[[Time]]</span></div>
+            <div class="tl-item"><div class="tl-ico"><i class="ic" data-icon="mail"></i></div><div class="grow"><div class="strong">[[Earlier activity]]</div><div class="t-cap muted">[[Who]]</div></div><span class="when">[[When]]</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- Dynamics 365 home, with Dynamics 365's own Copilot side pane (Microsoft's, not the custom agent app): the seller's dashboard (.d3-page.home: tabs, .d3-dash of .d3-card
+     with a .hd title, info icon and "View all", and a .bd body: rows, .d3-kpis tiles or an .empty state).  Copilot's
+     side pane (.d3-cp) is open on the right (the top bar's .d3-copilot is .on) with its greeting and suggestions;
+     the person asks on beat 1 and Copilot answers.  Use the side pane only when the story's work happens inside
+     Dynamics 365 and the story is about Microsoft's built-in Copilot; the custom agent app stays the default home
+     (look-and-feel.md, "Where the agent shows up").  Cut the
+     .d3-cp and .d3-rail to show the dashboard alone. -->
+<section class="scene zoom" id="d365-home" data-title="Dynamics 365 home with Copilot">
+  <div class="m365 d3">
+    <header class="d3-bar"><div class="waffle"><i class="ic" data-icon="grid"></i></div><div class="app-name">Dynamics 365<span>[[App]]</span></div><div class="search"><i class="ic" data-icon="search"></i>Search</div><span class="tools"><i class="ic" data-icon="add"></i><i class="ic" data-icon="settings"></i><i class="ic" data-icon="question_circle"></i><i class="ic" data-icon="alert"></i></span><span class="d3-copilot on"><span class="oi copilot"></span>Copilot</span><span class="avatar sm" data-name="[[Person]]"></span></header>
+    <div class="m365-body">
+      <nav class="d3-nav"><div class="menu"><i class="ic" data-icon="navigation"></i></div><div class="on"><i class="ic" data-icon="home"></i>Home</div><div><i class="ic" data-icon="clock"></i>Recent<i class="ic chev" data-icon="chevron_down"></i></div><div><i class="ic" data-icon="pin"></i>Pinned<i class="ic chev" data-icon="chevron_down"></i></div><div class="hdr">[[Group]]</div><div><i class="ic" data-icon="document"></i>[[Table]]</div><div><i class="ic" data-icon="people"></i>[[Table]]</div><div><i class="ic" data-icon="target"></i>[[Table]]</div><div class="hdr">[[Group]]</div><div><i class="ic" data-icon="building"></i>[[Table]]</div><div><i class="ic" data-icon="contact_card"></i>[[Table]]</div><div class="area"><span class="sq">[[A]]</span>[[Area]]<i class="ic chev" data-icon="chevron_down"></i></div></nav>
+      <div class="d3-page home">
+        <div class="d3-home-head"><div class="tabs"><span class="on">Home</span><span>[[Tab]]</span></div><span class="end"><i class="ic s16" data-icon="edit"></i>Personalize</span></div>
+        <div class="d3-dash">
+          <div class="d3-card"><div class="hd">[[Card title]]<i class="ic" data-icon="info"></i><span class="all">View all<i class="ic" data-icon="chevron_right"></i></span></div>
+            <div class="bd"><div class="row" style="gap:10px"><span class="avatar sm" data-name="[[Account]]"></span><div class="grow">[[Account]]<div class="t-cap muted">[[Why it's here]]</div></div></div>
+              <div class="row" style="gap:10px"><span class="avatar sm" data-name="[[Account]]"></span><div class="grow">[[Account]]<div class="t-cap muted">[[Why it's here]]</div></div></div></div></div>
+          <div class="d3-card"><div class="hd">[[Card title]]</div><div class="bd"><div class="empty"><i class="ic" data-icon="document"></i>[[Empty state, as the product words it]]</div></div></div>
+          <div class="d3-card"><div class="hd">[[Card title]]<i class="ic" data-icon="info"></i></div>
+            <div class="bd"><div class="d3-kpis"><div>[[Metric]]<b>[[0]]</b></div><div>[[Metric]]<b>[[0]]</b></div><div>[[Metric]]<b>[[0]]</b></div><div>[[Metric]]<b>[[0]]</b></div><div>[[Metric]]<b>[[0]]</b></div><div>[[Metric]]<b>[[0]]</b></div></div></div></div>
+          <div class="d3-card"><div class="hd">[[Card title]]<i class="ic" data-icon="info"></i><span class="all">View all<i class="ic" data-icon="chevron_right"></i></span></div><div class="bd"><div class="empty"><i class="ic" data-icon="target"></i>[[Empty state]]</div></div></div>
+        </div>
+      </div>
+      <aside class="d3-cp">
+        <div class="d3-cp-head"><span class="oi copilot"></span>Copilot<button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></div>
+        <div class="d3-cp-sub"><i class="ic" data-icon="navigation"></i><span class="end"><i class="ic shield" data-icon="shield_checkmark"></i><i class="ic" data-icon="more_horizontal"></i></span></div>
+        <div class="d3-cp-body">
+          <h2 data-hide="1">Hi, how can I help?</h2>
+          <p data-hide="1" style="margin:0">[[The product's greeting line]]</p>
+          <span class="sug" data-hide="1">[[Suggested question]]</span><span class="sug" data-hide="1">[[Suggested question]]</span>
+          <div class="cp-user" data-beat="1">[[What the person asks, in their words]]</div>
+          <div class="cp-turn" data-beat="2" data-auto="900"><div class="cp-resp"><p data-type="words" style="margin:0">[[The answer, from this record and its data]]<span class="cite">1</span></p></div>
+            <div class="refs"><span class="ref"><span class="oi sales"></span>[[Record or view]]</span></div></div>
+        </div>
+        <div class="d3-cp-prompt"><i class="ic" data-icon="add"></i>Ask [[App name]]<span class="end"><i class="ic" data-icon="mic"></i></span></div>
+      </aside>
+      <nav class="d3-rail"><i class="ic" data-icon="people"></i><i class="ic on" data-icon="chat"></i><i class="ic" data-icon="sparkle"></i></nav>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says, and what to click]]</aside>
+</section>
+
+<!-- The agent drafts a document in the pane next to the chat (.oi.word, .oi.excel or .oi.powerpoint).
+     The draft fills in on beats. -->
+<section class="scene zoom" id="doc" data-title="The agent drafts a document">
+  <div class="cpa nav-off">
+    <div class="cpa-title"><i class="ic" data-icon="arrow_left"></i><i class="ic off" data-icon="arrow_right"></i><span class="cpa-win"><i class="min"></i><i class="max"></i><i class="x"></i></span></div>
+    <div class="cpa-body">
+      <div class="cpa-main">
+        <div class="cpa-top"><button class="btn icon"><i class="ic" data-icon="panel_left"></i></button><span class="ttl">[[Conversation title]]</span></div>
+        <div class="cpa-work">
+          <div class="cpa-conv">
+            <div class="cpa-chat">
+              <div class="cp-user">[[What to draft, and for whom]]</div>
+              <div class="cp-who" data-beat="1" data-auto="500"><span class="cp-mark"><i class="ic grad" data-icon="sparkle_filled"></i></span>[[Agent name]]<span class="t-cap">Just now</span></div>
+              <div class="cp-turn" data-beat="1" data-auto="500"><div class="cp-resp"><p data-type="words">[[What the draft uses, and what it leaves for the person]]</p></div>
+                <div class="refs"><span class="ref"><i class="ic" data-icon="document"></i>[[Source]]</span></div></div>
+            </div>
+            <div class="cpa-prompt"><div class="ph">Ask [[App name]]</div><div class="tools"><span class="grow"></span><span class="cpa-send off"><i class="ic" data-icon="send_filled"></i></span></div></div>
+          </div>
+          <aside class="cpa-pane" style="--pane:760px" data-beat="1">
+            <div class="cpa-pane-head"><span class="oi word"></span><span class="doc-name">[[File name]]</span><span class="end"><span class="doc-acts"><button class="btn icon" title="Comments"><i class="ic" data-icon="chat"></i></button><button class="btn icon" title="Edit"><i class="ic" data-icon="edit"></i></button><button class="btn icon" title="Share"><i class="ic" data-icon="share"></i></button></span><button class="btn primary">Open in Word</button><button class="btn icon"><i class="ic" data-icon="more_horizontal"></i></button><button class="btn icon"><i class="ic" data-icon="dismiss"></i></button></span></div>
+            <div class="doc-tabs"><span>File</span><span class="on">Home</span><span>Insert</span><span>Layout</span><span>References</span><span>Review</span><span>View</span><span>Help</span></div>
+            <div class="cpa-doc"><div class="page">
+              <h1>[[Document title]]</h1><p class="sub">[[For whom · Draft, date]]</p>
+              <h2>[[Heading]]</h2><p>[[Paragraph]]</p>
+              <ol><li><b>[[Point]]</b><ol><li>[[Detail]]</li><li>[[Detail]]</li></ol></li></ol>
+              <div data-beat="2" data-auto="1000"><h2>[[Heading]]</h2><p>[[Paragraph]]</p></div>
+            </div></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- Power BI report, full screen: the numbers are the point and the browser pane would be too small.  Pages on the
+     left as in the service.  One of each visual kind: cards, column with a plan line, waterfall, table, bar. -->
+<section class="scene zoom" id="report" data-title="Power BI report">
+  <div class="pbi-app">
+    <div class="pbi-bar"><span class="oi powerbi"></span><span class="crumb">Power BI · [[Workspace]] · <b>[[Report name]]</b></span><span class="end"><span class="avatar xs" data-name="[[Person]]"></span></span></div>
+    <div class="pbi-act"><span>File<i class="ic" data-icon="chevron_down"></i></span><span>Export<i class="ic" data-icon="chevron_down"></i></span><span><i class="ic" data-icon="share"></i>Share</span><span><i class="ic grad" data-icon="sparkle"></i>Copilot</span></div>
+    <div class="pbi-main">
+      <div class="pbi-pages"><b>Pages</b><span class="on">[[Page]]</span><span>[[Page]]</span><span>[[Page]]</span></div>
+      <div class="pbi-canvas"><div class="pbi-page">
+        <div class="pbi-slicer" style="grid-column:span 6"><b>[[Slicer]]</b><span>[[Value]]<i class="ic" data-icon="chevron_down"></i></span></div>
+        <div class="pbi-slicer" style="grid-column:span 6"><b>[[Slicer]]</b><span>[[Value]]<i class="ic" data-icon="chevron_down"></i></span></div>
+        <div class="pbi card" style="grid-column:span 4"><span class="l">[[Measure]]</span><span class="v">[[Value]]</span><span class="r"><span>[[Context]]</span></span></div>
+        <div class="pbi card" style="grid-column:span 4"><span class="l">[[Measure]]</span><span class="v">[[Value]]</span><span class="r"><span>[[Context]]</span><b class="up">[[Delta]]</b></span></div>
+        <div class="pbi card" style="grid-column:span 4"><span class="l">[[Measure]]</span><span class="v">[[Value]]</span><span class="r"><span>[[Context]]</span><b class="down">[[Delta]]</b></span></div>
+        <figure class="pbi" style="grid-column:span 7" data-chart="column" data-line="[[Plan]]" data-h="170" data-fmt="0" data-xname="[[Axis]]"
+          data-x="[[A]],[[B]],[[C]],[[D]],[[E]]" data-series="[[Actual]]:3,4,4,5,6; [[Plan]]:4,4,4,4,4">
+          <figcaption class="pbi-head"><b>[[Visual title]]</b><span>[[Subtitle]]</span></figcaption>
+          <div class="pbi-tip" data-at="[[E]]" data-beat="1" data-auto="1500"><span>[[Tooltip label]]</span><b class="up">[[Value]]</b></div>
+        </figure>
+        <figure class="pbi" style="grid-column:span 5" data-chart="waterfall" data-style="labels" data-h="170" data-fmt="0" data-total="[[Total]]"
+          data-x="[[A]],[[B]],[[C]]" data-series="[[Variance]]:2,-3,-1">
+          <figcaption class="pbi-head"><b>[[Visual title]]</b><span>[[Subtitle]]</span></figcaption>
+        </figure>
+        <div class="pbi" style="grid-column:span 7"><div class="pbi-head"><b>[[Table title]]</b><span>[[Subtitle]]</span></div>
+          <table><thead><tr><th>[[Column]]</th><th class="n">[[Column]]</th><th class="n">[[Column]]</th></tr></thead>
+            <tbody><tr><td>[[Row]]</td><td class="n">[[Value]]</td><td class="n up">[[Value]]</td></tr><tr><td>[[Row]]</td><td class="n">[[Value]]</td><td class="n down">[[Value]]</td></tr>
+              <tr class="tot"><td>Total</td><td class="n">[[Value]]</td><td class="n">[[Value]]</td></tr></tbody></table></div>
+        <figure class="pbi" style="grid-column:span 5" data-chart="bar" data-h="130" data-fmt="0" data-xname="[[Axis]]"
+          data-x="[[A]],[[B]],[[C]]" data-series="[[Actual]]:3,2,1; [[Plan]]:2,2,2">
+          <figcaption class="pbi-head"><b>[[Visual title]]</b><span>[[Subtitle]]</span></figcaption>
+        </figure>
+      </div></div>
+      <div class="pbi-filters"><i class="ic" data-icon="filter"></i><span>Filters</span></div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+
+<!-- The customer's own system, full screen (.lob): unbranded, plain functional name, neutral colours
+     (style="--lob:#..." on .lob).  Never imitate a real non-Microsoft product.  The agent's row arrives on beat 1. -->
+<section class="scene zoom" id="business-app" data-title="Customer's own system">
+  <div class="lob">
+    <header class="lob-bar"><div class="name"><span class="glyph"><i class="ic" data-icon="document"></i></span>[[Plain functional name]]</div><div class="search"><i class="ic" data-icon="search"></i>[[Search hint]]</div><span class="avatar sm" data-name="[[Person]]"></span></header>
+    <div class="lob-body">
+      <nav class="lob-nav"><div class="on"><i class="ic" data-icon="document"></i>[[Section]]</div><div><i class="ic" data-icon="people"></i>[[Section]]</div><div><i class="ic" data-icon="settings"></i>Settings</div></nav>
+      <div class="lob-page">
+        <div class="lob-head"><h1>[[List name]]</h1><span class="badge">[[Filter]]</span><span class="grow"></span><button class="btn primary"><i class="ic" data-icon="add"></i>[[New item]]</button></div>
+        <div class="section" style="padding:8px 8px 4px"><table class="grid">
+          <tr><th>[[Column]]</th><th>[[Column]]</th><th>Status</th><th>[[Column]]</th></tr>
+          <tr class="new" data-beat="1" data-auto="700"><td class="strong">[[New row]]</td><td>[[Value]]</td><td><span class="badge brand">[[Status]]</span></td><td><span class="ai-flag"><i class="ic grad" data-icon="plug_connected"></i>[[Agent, for whom]]</span></td></tr>
+          <tr><td class="strong">[[Row]]</td><td>[[Value]]</td><td><span class="badge">[[Status]]</span></td><td>[[Person]]</td></tr>
+          <tr><td class="strong">[[Row]]</td><td>[[Value]]</td><td><span class="badge success">[[Status]]</span></td><td>[[Person]]</td></tr>
+        </table></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">[[What the presenter says]]</aside>
+</section>
+</main>
+<script src="kit/icons.js"></script>
+<script src="kit/proto.js"></script>
+</body>
+</html>
