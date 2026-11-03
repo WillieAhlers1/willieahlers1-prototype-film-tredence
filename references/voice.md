@@ -16,7 +16,7 @@ pauses): the delivery changes from take to take and the line boundaries have to 
    `<workspace>/.tredence/kokoro/`.
 3. `python voice.py --audition`: the film's first two lines (or a stock sample full of names and numbers) in six
    voices, saved as `audition/<voice>.wav` in the build folder.  Copy the folder into the workspace so the user can
-   play them.  Kokoro's strongest English voices: `am_michael`, `af_heart`, `am_fenrir`, `bf_emma`, `bm_george`,
+   play them.  Kokoro's strongest English voices: `af_heart` (the default), `am_michael`, `am_fenrir`, `bf_emma`, `bm_george`,
    `af_bella`; any other with `--voices a,b,c`; a blend with `am_michael:0.7,am_fenrir:0.3`.
 4. `python voice.py --use <voice> [--speed 0.95]` saves `<home>/voice.json`.  Every film after uses it, until the
    user picks again.  `film.json` `voice` overrides it for one film.

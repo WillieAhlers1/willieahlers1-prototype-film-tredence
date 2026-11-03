@@ -3,9 +3,9 @@
 Usage (from the build folder):
   python voice.py                       voice every "Host: " line with the saved voice profile
   python voice.py --setup               download the Kokoro model once (~350 MB) into <home>/kokoro
-  python voice.py --audition [--voices am_michael,af_heart,...] [--text "..."]
+  python voice.py --audition [--voices af_heart,am_michael,...] [--text "..."]
                                         the same sample in several voices -> audition/<voice>.wav, to pick one
-  python voice.py --use am_michael [--speed 0.95]
+  python voice.py --use af_heart [--speed 0.95]
                                         save the voice profile (<home>/voice.json); every film after uses it
   python voice.py --listen              transcribe each voiced line offline (faster-whisper) and flag words that
                                         didn't come out as written
@@ -55,8 +55,8 @@ KOKORO_FILES = {
     "kokoro-v1.0.onnx": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx",
     "voices-v1.0.bin": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin",
 }
-AUDITION_VOICES = ["am_michael", "af_heart", "am_fenrir", "bf_emma", "bm_george", "af_bella"]
-DEFAULT_PROFILE = {"engine": "kokoro", "name": "am_michael", "speed": 1.0, "lang": "en-us"}
+AUDITION_VOICES = ["af_heart", "am_michael", "am_fenrir", "bf_emma", "bm_george", "af_bella"]
+DEFAULT_PROFILE = {"engine": "kokoro", "name": "af_heart", "speed": 1.0, "lang": "en-us"}
 
 
 # ---------- where things live ----------

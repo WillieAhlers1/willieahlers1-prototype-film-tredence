@@ -35,7 +35,7 @@ DEFAULTS = {
         "silence_min_s": 0.22,
         "boundary_pad_s": 0.06,
     },
-    # Empty = the saved voice profile (<home>/voice.json, made with voice.py --use), else Kokoro am_michael.
+    # Empty = the saved voice profile (<home>/voice.json, made with voice.py --use), else Kokoro af_heart.
     # Set keys here only to override the profile for this film: engine (kokoro | azure | sapi | say), name, speed.
     "voice": {},
     "cues": "cues.json",
